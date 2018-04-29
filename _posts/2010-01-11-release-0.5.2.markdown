@@ -1,0 +1,55 @@
+---
+layout: post
+title:  Released 0.5.2
+date:   2010-01-11 16:55:43 +0100
+categories: release
+---
+
+A new version of NLarn is available. This is a bug-fix and refinement-only release, fixing all known issues with version 0.5.1.
+Get it from [Sourceforge](https://sourceforge.net/projects/nlarn/files/nlarn/0.5.2/).
+
+Saved games from previous versions are not compatible with this version. Please finish your game before installing this update. If you have installed a previous version with the Windows Installer package you can simply run the new installer and install over the previous version.
+
+## Changes in this version:
+
+* Improved maze creation: no more unreachable areas when a level contains a treasure room.
+* Stairways, the volcanic shafts and the bank branch office are placed in dead ends in the maze. Modified the colour of volcano and dungeon entrance to make them distinguishable from monsters.
+* Changed the floor image to a dot (.) to make finding unexplored regions possible.
+* Slightly rearranged town buildings and added an altar.
+* Revised and extended in-game help.
+* Added a README file with basic instructions and other information.
+* Cursedness / blessedness of an item is revealed when dropping it on an altar. The item description reflects if an item is known not to be cursed.
+* Destroy over-/under-enchanted items (> +3 / < -3).
+* Not all items are available in the _DND store_, only essential equipment. The items are displayed as identified and identified by purchasing them.
+* Implemented _aggravate monster_.
+* Reduced the speed at which level effects affect items.
+* Improved the way the player's invisibility is displayed.
+* Turned _spell of genocide_ into a _scroll of genocide monster_.
+* When casting a spell of type _ray_, all monsters standing in the way are affected.
+* Roll against constitution when getting poisoned to check if the player resists. The special monster attacks _blindness_, _confusion_  _paralysis_ and _drain life_ do not automatically succeed for every attack.
+* Enhanced the obituary further: display attributes, equipment, inventory and effects.
+* Removed sequential numbers from inventory dialog. Made it broader by 4 columns to have enough space for the blessedness information.
+* Modified number and string input function to allow overwrite mode.
+* Ask for the desired amount when picking up gold manually.
+* Changed the key to take items out of containers from _'t'_ to _'g'_.
+* Changed key used to drink from fountain to _'q'_.
+
+## Fixed bugs:
+
+* Fixed flooding behavior of _cloud kill_, _flood_ and _magic fire_. Fixed a crash when casting these spells near the borders of the map. Fixed casting these spells multiple times onto the same map squares.
+* Fixed screen drawing when using the _Scroll of Pulverisation_.
+* Fixed messages when gaining an experience level.
+* Fixed crash in item_enchant() / item_disenchant().
+* All unique weapons are always available in the _DND store_.
+* Fixed a crash when taking stackable items out of containers.
+* The volcano entrance now leads to level V1, not V3.
+* Examining the player's current position no longer counts as a move.
+* New monsters are placed outside of the player's visible area.
+* Fixed the code to find an available space in a given area which would fail quite frequently before for small areas (e.g. when generating gnome kings).
+* Fixed some special monster attack related bugs: _Spirit Protection_  and the umber hulk's confusion attack work again.
+* Fixed number and string input function on Windows.
+* Auto-pickup no longer asks how many items to pick up when picking up a stack of items.
+* The regular prices of items in no longer displayed in the _trade post_. Items sold to the _trade post_ are identified before being added to the _DND store_.
+* Corrected item descriptions: a/an is properly used.
+* Use the plural when applicable in player_inv_pre_add() (e.g. "_3221 gold pieces *are* too heavy for you._").
+* Allow using of all number keys when displaying a message.

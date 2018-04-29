@@ -1,0 +1,19 @@
+---
+layout: post
+title:  Released 0.4.1
+date:   2009-09-11 15:23:47 +0100
+categories: release
+---
+
+This is a bugfix release which fixes known issues in release 0.4.
+Get it at [the NLarn files page](http://sourceforge.net/projects/nlarn/files/nlarn/0.4.1/).
+
+Changes:
+
+* Mute duplicate message.
+* Vi keys now also work in dialogs.
+* Enter buildings with > (e no longer works).
+* Sales revenue goes to bank account.
+* Reworked adding/deleting items to/from inventory.
+
+Thanks for pointing these out go to _Grishnak_,  _sinoth_ and  _tametick_ of #rgrd.

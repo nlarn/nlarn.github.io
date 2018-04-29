@@ -1,0 +1,96 @@
+---
+layout: post
+title:  Released 0.5.4
+date:   2010-04-30 07:22:26 +0100
+categories: release
+---
+
+I'm exited to announce another maintenance release for the 0.5 series.
+[Download your copy from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.5.4/).
+
+The highlights of this version are:
+* Fast movement.
+* Speed.
+* Many user interface enhancements.
+* Many bug fixes.
+
+Many of the changes in this version have either been coded or suggested by Johanna Ploog, also known as jpeg.
+
+Unfortunately, saved games from previous versions of the game are not compatible to this version. Unlike the previous versions, this release will not crash when it attempts to load an old saved game.
+
+## Changes in this version:
+
+* Implemented different speeds for monsters and the player. Reenabled the scroll of speed and the spell "haste self".
+* Implemented the spell "time stop".
+* Modified keys for open/close and magic:
+  * 'o'pen (instead of 'O')
+  * 'c'lose (instead of 'C')
+  * 'm'agic (instead of 'c'ast)
+* Add fast movement command that uses the following (direction) input for running (g).
+* Implement a long-rest command: (w)ait which will ignore adjacent floating eyes und umber hulks.
+* Added functionality to (r)ead/(q)uaff/(e)quip/(t)ake off/(d)rop an item quickly.
+* Remember visited landmarks. A list of these can be shown with (D).
+* Rearranged hp/mp/xp display to be more consistent with other stats.
+* Display carried item weight in inventory header. Removed the command previously used to display the pack weight.
+* Display the bank account balance in shop windows.
+* Added item description popup to inventory.
+* Allow equipping items in the trade post.
+* The message history is shown reversed and the entries are prefixed with their turn number. Truncate the message log to 100 entries.
+* Enhanced the dialogue to get a number: set overwrite mode as default; accept 'y', 'g', 'd' and 'p' as the full amount and 'n' as 0 to speed up getting and dropping multiple items.
+* Ask for the player's name and sex during game creation if not set in .ini file or by command line parameters.
+* Prompt if a fireball is going to hit the player.
+* When autopicking up stuff, give a message if there are more items there.
+* In yes/no prompt, always highlight selected choice in red. Generally allow the initial letters of the button captions as shortcut.
+* Mention command help ('?' command) at game start/reload.
+* Use block cursor when asking for a position.
+* Display items and stationary objects which are not in sight with their colour to make finding them again easier. New display order: stationary objects > items. New item display/memorizsation order: gems > gold > topmost item.
+* Made containers ask for the amount when putting things into/taking things out.
+* Open doors by walking into them, though not on shift-run.
+* Modified some monster glyphs.
+* Make the potion of cure dianthroritis expensive. This is a simple flavour change: If you attempt to sell this unique potion, you should get more money for it than for a corroded dagger. Remove the potion from the player's inventory when winning the game.
+* When magic mapping, only map non-floor tiles.
+* Sometimes flip custom maze maps when generating levels. Should keep things more interesting even if you keep seeing the same levels again and again.
+* Notify the player of stationary objects when entering a tile.
+* Allow the player to deliberately jump through trap doors with '>'.
+* Explicitly name the item a nymph is stealing.
+* Make leprechauns steal gold the player is standing on if none carried.
+* Give a warning when the disenchantress reduces an item to -3.
+* Give a message if an unseen monster died and the player got xp for it.
+* Allow to auto-id all ring types.
+* Made the uncursed variants of the scrolls gem perfection, identify, remove curse and spell extension less powerful and added a blessed variant with the original power. Let the player decide which gem to make perfect, wich item to identify or to uncurse when using the uncursed variant.
+* Improved messages given when interacting with stationary objects. Show a message when a monster has been generated.
+* Replace splash screen backstory with a new text that makes more sense.
+* Improved save file compatibility handling.
+* Added a change log file to the distribution.
+* Various wizard mode enhancements.
+
+## Fixed bugs:
+
+* Fixed level draining attacks which could lead to a crash.
+* Fixed a crash when casting sleep at an already sleeping monster.
+* Fixed a crash when buying a single item which is too heavy to be carried.
+* Fixed a nasty crash in building_item_sell() that occured when the player bought the entire stock of a stackable item that already existed in the player's inventory.
+* Fixed a crash when experience level 1 got drained.
+* Fix off-by-one-error preventing generation of the scroll of genocide and the potion of see invisible.
+* Make sure stationary objects are moved out of treasure rooms.
+* Fixed item bonuses.
+* Fixed many information leaks about invisible monsters.
+* Reduced the information leak about unidentified mimics.
+* Fixed some monster plural names in the vanquished list and the message given by the scroll of genocide monster.
+* Don't identify cursed potions or scrolls on using them.
+* When blind, don't id curse status of items dropped on altars.
+* If an item becomes uncursed, its curse status should be known.
+* Sort same-type shop items alphabetically by their _identified_ names.
+* When using alter reality in the tenth dungeon level or the third volcano level, the unique items _amulet of larn_ and _potion of cure dianthroritis_ will be regenerated. Never ever destroy the potion of cure dianthroritis by erosion.
+* Vampires would never use their bite attack. Now there is a 20% chance that they will do so.
+* The ziller and vortex can now attack again.
+* Store monster AI state in saved games.
+* Prevent uninjured monsters being displayed as "slightly injured".
+* Honour time usage when doing auto-pickup. Call autopickup when entering a new level.
+* Disallow opening/closing doors while paralysed or overstrained.
+* Fixed the calculation of bank account interest when doing a time warp.
+* Fixed "charm monster". Now it affects only a single monster which has to be targeted by the spell.
+* Fixed moving items from a container in the players inventory to the players inventory and vice versa.
+* Mute pointless messages when going from burdened to overloaded and vice versa.
+* Fixed _lots_ of message glitches.
+* Fixed some memory leaks.

@@ -1,0 +1,37 @@
+---
+layout: post
+title:  Released 0.5.3
+date:   2010-02-28 20:16:38 +0100
+categories: release
+---
+
+Once more a bug-fix and refinement-only release of NLarn is available, fixing all the  issues known with version 0.5.2.
+Get it from [Sourceforge](https://sourceforge.net/projects/nlarn/files/nlarn/0.5.3/).
+
+I have disabled all unimplemented spells and scrolls in this release. Once again - unfortunately - save files created by the previous version will not work.
+
+## Changes in this version:
+
+* Lots of colours!
+* GFX for ray and blast type spells.
+* The display is updated while sleeping.
+* Updated the fortunes.
+* When examining a position, the monster on it is described with more details.
+* Display additional information for unique weapons, like damages, bonus or curses.
+* Added the ability to display the bank account balance with 'B'.
+* Modified item generation: only blessed items have a bonus, only cursed items have a malus.
+
+## Fixed bugs:
+
+* Item stacking sometimes did not work. This has been fixed. Properly returned split items to the originating inventory when adding to the target inventory has failed.
+* Some effect descriptions are broader than the available space and were wrapped around. This has been fixed. Duplicate effects are no longer listed in the effects list. Added some missing effect descriptions.
+* Fixed stacking of effects, e.g. it is no longer possible to become paralysed when already paralysed.
+* Invalid movement counts as a move when confused (i.e. running into a wall).
+* The inventory is not displayed in obituary when empty. The map is hidden in the obituary if the player is in town. Fixed an issue with the statistics in the obituary.
+* Burdened state gets recalculated when the player's strength value changes (reported by Nick Genthner).
+* A crash in the spell selection dialog has been fixed.
+* Fixed a rare crash bug that occurred when a monster stepped into a poison trap twice.
+* Fixed two bugs with restoring saved games.
+* Some animals dropped money. This has been fixed.
+* The chance to gain intelligence by reading books was way too high and has been significantly lowered.
+* Fixed some message glitches.

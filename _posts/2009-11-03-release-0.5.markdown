@@ -1,0 +1,50 @@
+---
+layout: post
+title:  Released 0.5
+date:   2009-11-03 01:12:53 +0200
+categories: release
+---
+
+Here comes a new release of NLarn.
+Get it from [Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.5/).
+
+## New in this version:
+* Save your game and continue playing later.
+* The town level is now static and has a lake and lots of trees. Buildings can now be recognized as such.
+* Shops debit the player's bank account for their services.
+* It is now possible to save a memorial file for a deceased character. The obituary contains a list of vanquished creatures.
+* Configuration file allows to preset autopickup and the like.
+* Implemented a string input function.
+* The caption in the get_count dialog can now be wrapped.
+* Created a rpm spec file.
+* Created an installer for Windows.
+* More weapons and armour types. Raised weapon and armour prices.
+* Monsters that can use weapons will use weapons - against you!
+* Implemented taking things out of and putting things into containers.
+* Added a chance of failure when casting a spell.
+* Ability to display spell description in the spell selection dialog.
+* Honour spell knowledge level when calculation spell damage/power.
+* Added ability to examine any visible position. Enhanced the descriptions of a position.
+* Monsters can use stairs or even enter the town to follow the player.
+* Monsters can fall through trap doors and appear on the level below.
+* Vastly lowered gem values.
+* Re-enforce monsters on a map every now and then.
+
+## Bugs and features fixed in this version:
+* Fixed stealth.
+* Fixed a crash in the inventory dialog.
+* A leprechaun who picked up a gem could cause a crash in the drawing code (this one took me hours to figure out. You got to love C!)
+* A message is logged when no item has been discovered instead of showing an empty dialog box.
+* Fixed a bug in auto-pickup code which would lead to a game freeze and 100% CPU usage.
+* Fixed duplicate knowledge of spells.
+* Move all _Spheres of Destruction_.
+* Fixed the behavior of backspace key in the get_amount dialog.
+* Fixed a game freeze when a fireball hit monsters.
+* Books are used up upon successful learning.
+* Corrected spell MP usage. Aborted spells no longer cost MPs.
+* Corrected cloning of items with effects.
+* When withdrawing large sums from the bank without being able to carry it the money was lost. This has been fixed.
+* Fixed a hang at the end of the game.
+* Fixed trap generation of traps: now trapdoors are generated, too.
+* Nymphs can no longer steal cursed items that are equipped.
+

@@ -1,0 +1,54 @@
+---
+layout: post
+title:  Release 0.7.2
+date:   2012-07-06 19:54:50 +0100
+categories: release
+---
+
+After only a short span of time, the next release on NLarn is finished.
+
+The most significant change is the availability of a MacOS X installer.
+NLarn uses SDL PDCurses on OS X, which allows to scale the window; the font size will change with the window size. It is known to work on Snow Leopard and Lion. As it is a 64-bit application it will not work on older Macs. Currently the '\' key (which will open the list of discovered items) is not recognized (at least with a german keyboard layout), the reason is under investigation. If anybody has an idea how to solve this, I'd be more than glad to hear from you!
+
+Except this, most predominantly a lot of bug fixing and mending was undertaken, but still some features were added. Saved games created by previous versions are obsolete.
+
+[Download it from sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.2/) and I hope you enjoy playing it!
+
+### The changes.
+
+* Added an OS X disk image with "installer".
+* Use SDL PDCurses per default on OS X. This allows to scale the window and set the window icon and title when running.
+* Implemented magic resistance for monsters. The hell hound, the spirit naga and the demon lords and prince are now resistant to damage cause by magic (currently only the magic missile).
+* The spells lightning, cone of cold and fireball can now destroy doors.
+* It is now possible to target a spell while blinded.
+* Implemented the disarming of traps and the removal of traps from containers(key: 'D'). Moved the previous shortcut for the list of discovered landmarks from 'D' to CTRL+D.
+* When quaffing healing or power potions at full hp or mp the maximum for the specific stat is increased.
+* Allow ranged attacks on invisible monsters and decreased the chance to hit then with melee and ranged attacks.
+* Abort searching when monsters are close.
+* The metamorph will now drop it's weapon when turning into a monster that cannot use it; the new monster's hp depend on the relative amount of the new monster type's maximum hp.
+* Show a message when an item is identified by wearing it.
+* Ensure that unique weapons won't break.
+* Added version information to the Windows installer.
+* Display a message when using the potion of full healing.
+
+### The fixed bugs.
+
+* Fixed a crash that could occur when a blast of fire (caused by hell hounds or red dragon) destroyed items in the inventory.
+* Fixed a crash when a monster triggerd a trap with a specific message.
+* Various fixes and enhancements for spheres of anihillation.
+* Do not swap weapons when none is readied.
+* Inhibit various actions while paralyzed.
+* Corrected combat messages and disable looking around while blinded.
+* Fixed the spell "polymorph".
+* Ensure the townsfolk don't block important places.
+* Some fixes to the monastery:
+  * Fix two crashes: one occured when aborting the item selection; the other when uncursing uncursed, but unidentified items.
+  * The monastery will no longer "remove curses" on containers (i.e. traps).
+  * Ensure the price for remove curse is at least 1gp.
+  * Handle plural case in a monastery message.
+* Avoid ammo that is stuck inside walls.
+* Fix repair price calculation for blessed items.
+* Ensure the scroll of blank paper is unlabeled.
+* Show sec. weapon and quivered item in obituary.
+* Corrected the description of the spell "cancellation".
+* Don't show the name of unseen monsters.

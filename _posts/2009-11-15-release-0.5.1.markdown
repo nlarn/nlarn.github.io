@@ -1,0 +1,36 @@
+---
+layout: post
+title:  Released 0.5.1
+date:   2009-11-15 17:23:46 +0100
+categories: release
+---
+
+A new version of NLarn is available. This is a bug-fix and refinement-only release, thus all the changes are small, but so should be the number of bugs.
+Get it from [Sourceforge](https://sourceforge.net/projects/nlarn/files/nlarn/0.5.1/).
+
+If you have installed the previous version using the Windows Installer package you can simply run the new installer and install over the previous version.
+
+## Changes in this version:
+
+* Monsters do either pick up a single item or move. Previously monsters could even pick up multiple items and move as well.
+* The Leprechaun steals and teleports again.
+* Added burnt/corroded/rusty to item description.
+* Fixed messages given when changing the level.
+* Drinking a potion of forgetfulness could lead to a crash. This has been fixed.
+* Washing at the fountain had been assigned the 't' key and been described as _tidy up at fountain_. This has been reassigned to 'W' with the description _wash at fountain_.
+* Added description messages when using stationary objects.
+* Thrones could generate multiple gnome kings. This has been fixed.
+* Fixed order of messages when killing a monster and thus gaining an experience level.
+* Monsters can no longer enter a level when the entrance is blocked.
+* Fixed a crash that occurred when examining a position with a monster on it.
+* Fixed a mistakable message when casting the spell _vaporize rock_.
+* Started using a directory for the user's game related files; read .ini-file from there; put save file into it. Under Linux this directory is called _~/.nlarn_, under Windows it is below _Application Data_ (or the localized version thereof).
+* Read settings from the .ini-file correctly when restoring a saved game.
+* Fixed a crash when pressing the windows keys while having a window open.
+* Gems sold to the bank do no longer appear in the DND store.
+* Items sold to the trade post are refurbished before being added to the DND store.
+* The bonus of armour and weapons sold in store is now known to the player.
+* Fixed a crash when displaying high scores and the current score is not in the list.
+* Fixed a crash in large inventories when scrolling with page down starting with the second entry.
+* Added monsters and the player to the map shown at the end of the game. Added some statistics to the obituary.
+* Player dies if strength or dexterity sink below 1.

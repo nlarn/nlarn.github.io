@@ -1,0 +1,44 @@
+title: nlarn
+description: News about NLarn, a roguelike game
+sourcecode: "https://github.com/nlarn/nlarn.gitub.io"
+
+permalink: news/:year/:month/:day/:title
+exclude: ["Makefile", "README.md"]
+
+url: "https://nlarn.github.io"     # the base hostname & protocol for your site
+baseurl: ""                        # the subpath of your site, e.g. /blog
+
+author:
+    name: Joachim de Groot
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#
+analytics:
+    provider: false
+    statcounter:
+        sc_project  :
+        sc_security :
+        sc_invisible: 1
+        sc_text     : 2
+    getclicky:
+      site_id:
+    mixpanel:
+        token: ''
+    piwik:
+        baseURL: '' # Piwik installation address (without protocol)
+        idsite: ''  # the id of the site on Piwik
+
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use.
+# Set 'provider' to false to turn commenting off globally.
+#
+comments:
+    provider: intensedebate
+    intensedebate:
+      account: fd1c271c24dec33afa77308e9db3b39e
