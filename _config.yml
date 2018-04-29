@@ -1,6 +1,6 @@
 title: nlarn
 description: News about NLarn, a roguelike game
-sourcecode: "https://github.com/nlarn/nlarn.gitub.io"
+sourcecode: "https://github.com/nlarn/nlarn.github.io"
 
 permalink: news/:year/:month/:day/:title
 exclude: ["Makefile", "README.md"]
