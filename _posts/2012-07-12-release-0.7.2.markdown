@@ -8,7 +8,7 @@ categories: release
 After only a short span of time, the next release on NLarn is finished.
 
 The most significant change is the availability of a MacOS X installer.
-NLarn uses SDL PDCurses on OS X, which allows to scale the window; the font size will change with the window size. It is known to work on Snow Leopard and Lion. As it is a 64-bit application it will not work on older Macs. Currently the '\' key (which will open the list of discovered items) is not recognized (at least with a german keyboard layout), the reason is under investigation. If anybody has an idea how to solve this, I'd be more than glad to hear from you!
+NLarn uses SDL PDCurses on OS X, which allows to scale the window; the font size will change with the window size. It is known to work on Snow Leopard and Lion. As it is a 64-bit application it will not work on older Macs. Currently the '\\' key (which will open the list of discovered items) is not recognized (at least with a german keyboard layout), the reason is under investigation. If anybody has an idea how to solve this, I'd be more than glad to hear from you!
 
 Except this, most predominantly a lot of bug fixing and mending was undertaken, but still some features were added. Saved games created by previous versions are obsolete.
 
