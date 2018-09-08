@@ -1,0 +1,52 @@
+---
+layout: post
+title:  Release 0.7.3
+date:   2018-09-08 22:36:00 +0100
+categories: release
+---
+
+After a seemingly endless deep slumber, which might have seemed like death, life returned to the effort to create a Larn for the 21st century.
+
+This release focused on polishing and balancing the combat system. The Windows version no longer runs in a console window, but uses a graphical console emulation and thus catches up with the macOS version, which always presented itself to the play this way. To ease the transition, the font size for the game can be modified in the configuration file.
+
+As usual, also some bugs got fixed. Unfortunately saved games created by previous versions are not compatible.
+
+[Download it from sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.3/) and I hope you enjoy playing it!
+
+### The changes.
+
+ * Gerneric SDL PDCurses support for all platforms
+ * Configurable font size for the SDL version
+ * Combat: take enemy size into account
+ * Combat: balance weapon damage
+ * Magic: Animate reflection of rays
+ * Magic: Magic Missile is handled as ray spell
+ * Magic: Terminate ray spells at medium sized monsters
+ * Magic: Balance spell damage
+ * Added cold resistance for monsters (the ice lizard, the yeti and the white dragon don't take damage from cone of cold)
+ * Minimalistic item descriptions when blinded
+ * Blinking display for very low HP (always with SDL PDCurses, when compiled with ncurses blinking depends on terminal support)
+ * Bright red warning when unarmed
+ * The potion of treasure finding now detects the bank branch office
+ * The potion of healing and the healing spell can now cure sickness
+ * Mitigated the scroll of spell extension
+ * Occasionally drop arrows when disarming arrow traps
+ * Pay taxes in one step
+ * Lock savegame file while the game is running (prevents accidentially launching the game multiple times from autosaves)
+ * Code cleanup
+
+### The fixed bugs.
+
+ * Only erode player's exposed items from monster breath attacks
+ * Prevent increasing max. HP with healing spell
+ * Prevent wearing ring or body armour when wearing gloves or a cloak
+ * Prevent swapping weapons when secondary weapon is two-handed and holding a shield
+ * Match fountain event probabilities with those of the original Larn
+ * Fixed type II demon lords (who lost all their special abilities with the previous release)
+ * Fixed handling of itching when washing at a fountain
+ * Fixed crash when reading scroll of identify without or very few unidentified items
+ * Fixed burning of grass
+ * Corrected some messages
+ * Fixed some visual glitches
+
+
