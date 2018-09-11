@@ -28,7 +28,7 @@ Changes in this release are:
 * Reduced the range of enlightenment.
 * Wizard Mode: allow to select stationary objects as teleport destination (as for auto-travel).
 * Improved the help file.
-* Modernized the Windows Installer.
+* Modernised the Windows Installer.
 * Windows Resources now allow icons for the executable and embedded dynamic version information in the executable.
 * Accept ^U/^D in the inventory, spell list and message windows as PGUP/PGDOWN.
 * Expanded scores in the memorial file onto two lines. This avoids ugly wraps and allows to display more information. Spelled out explanational remarks and added the dungeon level.
@@ -36,14 +36,14 @@ Changes in this release are:
   * Save the file in the user's home directory; on Windows save it under "My Documents".
   * Offer to chose a new file name if a file exists.
   * Wrap and indent long lines at column 78.
-  * Choose the line terminator matching the plattform.
+  * Choose the line terminator matching the platform.
 * Implemented working setgid for system-wide installations on *nix systems.
 
 Quite a lot of bugs got fixed:
 * Adapted the map loading code to native EOL. This fixes unreachable areas when playing on Windows (reported by many).
 * Fixed enlightenment for the upper left corner of the map (Reported by Krice).
 * Fixed a crash after shooting the last ammo.
-* Ensure player's experience can not sink below zero. This fixes a crash that occured when drinking from a fountain and loosing more experience than the player has.
+* Ensure player's experience can not sink below zero. This fixes a crash that occurred when drinking from a fountain and loosing more experience than the player has.
 * Calculate adjacent monsters while enlightened. This fixes targeting and allows to abort running or auto-travel.
 * Fixed increase of spell effect duration when casting a spell known at a higher level of knowledge multiple times.
 * Prevent swapping cursed weapons.
@@ -51,7 +51,7 @@ Quite a lot of bugs got fixed:
 * Fix the order of message when unequipping multiple item types: log success only after the time is passed. Fixed the order of messages when climbing out of a pit.
 * Fixed ranged attacks to monsters over water/lava.
 * Waste ammo when dropped on deep water or lava.
-* Slings and bows are twohanded weapons, too.
+* Slings and bows are two-handed weapons, too.
 * Recalc burdened status after fighter courses.
 * Colour first headline in identified item's list.
 * Count scrolls scribed at the school as item purchase, not as

@@ -35,7 +35,7 @@ Saved games from versions 0.6 are compatible with this version. If you have inst
 
 ## Fixed bugs
 
-* Recognize keypad enter on Windows. Reported by Xecutor and Michael Ax.
+* Recognise keypad enter on Windows. Reported by Xecutor and Michael Ax.
 * Allow using numpad direction keys for fast movement with num lock
   off on Windows.
 * Offer only items that can be blessed or cursed for curse removal or
@@ -57,7 +57,7 @@ Saved games from versions 0.6 are compatible with this version. If you have inst
 * Make aborted spells not cost turns.
 * Fix an assertion when aborting phantasmal forces and an information
   leak in that spell.
-* Initialize wizard_mode game property before creating a new game. This
+* Initialise wizard_mode game property before creating a new game. This
   is necessary if we want to stock the DND store differently depending
   on whether a game is started in wizard mode or not.
 * Remove notes from items sold to the trade post.

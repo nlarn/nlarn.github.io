@@ -20,14 +20,14 @@ Unfortunately, saved games from previous versions of the game are not compatible
 
 ## Changes in this version:
 
-* Implemented different speeds for monsters and the player. Reenabled the scroll of speed and the spell "haste self".
+* Implemented different speeds for monsters and the player. Re-enabled the scroll of speed and the spell "haste self".
 * Implemented the spell "time stop".
 * Modified keys for open/close and magic:
   * 'o'pen (instead of 'O')
   * 'c'lose (instead of 'C')
   * 'm'agic (instead of 'c'ast)
 * Add fast movement command that uses the following (direction) input for running (g).
-* Implement a long-rest command: (w)ait which will ignore adjacent floating eyes und umber hulks.
+* Implement a long-rest command: (w)ait which will ignore adjacent floating eyes and umber hulks.
 * Added functionality to (r)ead/(q)uaff/(e)quip/(t)ake off/(d)rop an item quickly.
 * Remember visited landmarks. A list of these can be shown with (D).
 * Rearranged hp/mp/xp display to be more consistent with other stats.
@@ -43,7 +43,7 @@ Unfortunately, saved games from previous versions of the game are not compatible
 * In yes/no prompt, always highlight selected choice in red. Generally allow the initial letters of the button captions as shortcut.
 * Mention command help ('?' command) at game start/reload.
 * Use block cursor when asking for a position.
-* Display items and stationary objects which are not in sight with their colour to make finding them again easier. New display order: stationary objects > items. New item display/memorizsation order: gems > gold > topmost item.
+* Display items and stationary objects which are not in sight with their colour to make finding them again easier. New display order: stationary objects > items. New item display/memorisation order: gems > gold > topmost item.
 * Made containers ask for the amount when putting things into/taking things out.
 * Open doors by walking into them, though not on shift-run.
 * Modified some monster glyphs.
@@ -57,7 +57,7 @@ Unfortunately, saved games from previous versions of the game are not compatible
 * Give a warning when the disenchantress reduces an item to -3.
 * Give a message if an unseen monster died and the player got xp for it.
 * Allow to auto-id all ring types.
-* Made the uncursed variants of the scrolls gem perfection, identify, remove curse and spell extension less powerful and added a blessed variant with the original power. Let the player decide which gem to make perfect, wich item to identify or to uncurse when using the uncursed variant.
+* Made the uncursed variants of the scrolls gem perfection, identify, remove curse and spell extension less powerful and added a blessed variant with the original power. Let the player decide which gem to make perfect, which item to identify or to uncurse when using the uncursed variant.
 * Improved messages given when interacting with stationary objects. Show a message when a monster has been generated.
 * Replace splash screen backstory with a new text that makes more sense.
 * Improved save file compatibility handling.
@@ -69,7 +69,7 @@ Unfortunately, saved games from previous versions of the game are not compatible
 * Fixed level draining attacks which could lead to a crash.
 * Fixed a crash when casting sleep at an already sleeping monster.
 * Fixed a crash when buying a single item which is too heavy to be carried.
-* Fixed a nasty crash in building_item_sell() that occured when the player bought the entire stock of a stackable item that already existed in the player's inventory.
+* Fixed a nasty crash in building_item_sell() that occurred when the player bought the entire stock of a stackable item that already existed in the player's inventory.
 * Fixed a crash when experience level 1 got drained.
 * Fix off-by-one-error preventing generation of the scroll of genocide and the potion of see invisible.
 * Make sure stationary objects are moved out of treasure rooms.

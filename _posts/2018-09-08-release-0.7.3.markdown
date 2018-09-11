@@ -15,7 +15,7 @@ As usual, also some bugs got fixed. Unfortunately saved games created by previou
 
 ### The changes.
 
- * Gerneric SDL PDCurses support for all platforms
+ * Generic SDL PDCurses support for all platforms
  * Configurable font size for the SDL version
  * Combat: take enemy size into account
  * Combat: balance weapon damage
@@ -32,7 +32,7 @@ As usual, also some bugs got fixed. Unfortunately saved games created by previou
  * Mitigated the scroll of spell extension
  * Occasionally drop arrows when disarming arrow traps
  * Pay taxes in one step
- * Lock savegame file while the game is running (prevents accidentially launching the game multiple times from autosaves)
+ * Lock savegame file while the game is running (prevents accidentally launching the game multiple times from autosaves)
  * Code cleanup
 
 ### The fixed bugs.

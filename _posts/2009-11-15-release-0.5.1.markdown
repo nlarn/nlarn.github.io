@@ -23,8 +23,8 @@ If you have installed the previous version using the Windows Installer package y
 * Fixed order of messages when killing a monster and thus gaining an experience level.
 * Monsters can no longer enter a level when the entrance is blocked.
 * Fixed a crash that occurred when examining a position with a monster on it.
-* Fixed a mistakable message when casting the spell _vaporize rock_.
-* Started using a directory for the user's game related files; read .ini-file from there; put save file into it. Under Linux this directory is called _~/.nlarn_, under Windows it is below _Application Data_ (or the localized version thereof).
+* Fixed a mistakable message when casting the spell _vaporise rock_.
+* Started using a directory for the user's game related files; read .ini-file from there; put save file into it. Under Linux this directory is called _~/.nlarn_, under Windows it is below _Application Data_ (or the localised version thereof).
 * Read settings from the .ini-file correctly when restoring a saved game.
 * Fixed a crash when pressing the windows keys while having a window open.
 * Gems sold to the bank do no longer appear in the DND store.

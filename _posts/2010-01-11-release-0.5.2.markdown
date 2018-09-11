@@ -36,7 +36,7 @@ Saved games from previous versions are not compatible with this version. Please 
 
 ## Fixed bugs:
 
-* Fixed flooding behavior of _cloud kill_, _flood_ and _magic fire_. Fixed a crash when casting these spells near the borders of the map. Fixed casting these spells multiple times onto the same map squares.
+* Fixed flooding behaviour of _cloud kill_, _flood_ and _magic fire_. Fixed a crash when casting these spells near the borders of the map. Fixed casting these spells multiple times onto the same map squares.
 * Fixed screen drawing when using the _Scroll of Pulverisation_.
 * Fixed messages when gaining an experience level.
 * Fixed crash in item_enchant() / item_disenchant().

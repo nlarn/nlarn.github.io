@@ -11,7 +11,7 @@ My intention when starting this project was to get a copy of Larn that one could
 
 As I never _really_ played Larn, NLarn might be quite different to Larn in certain areas, but at least I tried to follow the original. Some aspects of Larn's game-play (which I only experienced by reading the code) seemed a bit weird and didn't suit my taste, so I changed them intentionally. Other changes are caused by the unreadability of Larn's code.
 
-As todays computers are a bit more advanced compared to those in the eighties, I could do a completely different approach to how things are handled under the cover.
+As today's computers are a bit more advanced compared to those in the eighties, I could do a completely different approach to how things are handled under the cover.
 
 Very noticeable differences to the original so far include:
 * advanced user interface

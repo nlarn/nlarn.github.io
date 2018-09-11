@@ -13,7 +13,7 @@ The changes in this milestone on the long and winding road to the perfect roguel
 * Scribes in the school of Larn can write any scroll on blank scrolls.
 * Stop automatic movement or resting as soon as a monster enters the field of vision, not only when it is on a field next to the player. This should give the player more time to react accordingly.
 * Spells that cause effects to the player now extend the effect amount or duration up to (spell knowledge level * base value). Messages are displayed to reflect that an effect has been extended or that the maximum has been reached.
-* Added an intelligence requirement to learning spells and extended the requirement for casting spellst to 3 * spell level.
+* Added an intelligence requirement to learning spells and extended the requirement for casting spells to 3 * spell level.
 * Implemented raising taxes:
 For every difficulty level above zero the player has to pay 5% of the income, i.e. money deposited on the bank, item sale revenue and interest as taxes. The maximum tax percentage is 20%.
 Added statistics about paid taxes to the obituary.
@@ -34,14 +34,14 @@ Searching is also useful to examine the surroundings while blinded.
 * Added new item slots: secondary weapon and quiver.
 * Enabled swapping primary and secondary weapon ('x').
 * Implemented a "paperdoll", a list of all equipped items ('TAB').
-* Implemented thwrowing of potions ('t').
+* Implemented throwing of potions ('t').
 * Most potions now work on monsters.
 * Made the potion of holy water dangerous for undead monsters.
 * Thrown or fired items will be picked up automatically regardless of autopickup settings.
 * Added a command (M) to cast the previous spell again.
 * It is now possible to pay with money stuffed in carried containers.
 The leprechaun can now to steal money hidden inside carried containers.
-* Tweaked the behviour of the townsfolk. They will no longer walk around like drunk, do important town people business and only talk when the player is outside a building.
+* Tweaked the behaviour of the townsfolk. They will no longer walk around like drunk, do important town people business and only talk when the player is outside a building.
 * Started to work on summoned monsters:
   * summoned monsters can follow the player,
   * do not impact automatic movement,
@@ -52,8 +52,8 @@ The leprechaun can now to steal money hidden inside carried containers.
 * Added monster's weapon to monster's description.
 * Implemented a mana drain trap.
 * Added dynamic help to the inventory dialog.
-* Messages and dialogs can now be coloured, some already are.
-* Spell rays or blasts now have differen colours.
+* Messages and dialogues can now be coloured, some already are.
+* Spell rays or blasts now have different colours.
 * Modified effect list display on the right side of the screen:
   * unique entries only
   * positive effects coloured cyan

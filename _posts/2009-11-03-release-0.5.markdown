@@ -10,7 +10,7 @@ Get it from [Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.5/
 
 ## New in this version:
 * Save your game and continue playing later.
-* The town level is now static and has a lake and lots of trees. Buildings can now be recognized as such.
+* The town level is now static and has a lake and lots of trees. Buildings can now be recognised as such.
 * Shops debit the player's bank account for their services.
 * It is now possible to save a memorial file for a deceased character. The obituary contains a list of vanquished creatures.
 * Configuration file allows to preset autopickup and the like.
@@ -38,7 +38,7 @@ Get it from [Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.5/
 * Fixed a bug in auto-pickup code which would lead to a game freeze and 100% CPU usage.
 * Fixed duplicate knowledge of spells.
 * Move all _Spheres of Destruction_.
-* Fixed the behavior of backspace key in the get_amount dialog.
+* Fixed the behaviour of backspace key in the get_amount dialog.
 * Fixed a game freeze when a fireball hit monsters.
 * Books are used up upon successful learning.
 * Corrected spell MP usage. Aborted spells no longer cost MPs.

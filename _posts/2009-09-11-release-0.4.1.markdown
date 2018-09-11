@@ -11,7 +11,7 @@ Get it at [the NLarn files page](http://sourceforge.net/projects/nlarn/files/nla
 Changes:
 
 * Mute duplicate message.
-* Vi keys now also work in dialogs.
+* Vi keys now also work in dialogues.
 * Enter buildings with > (e no longer works).
 * Sales revenue goes to bank account.
 * Reworked adding/deleting items to/from inventory.
