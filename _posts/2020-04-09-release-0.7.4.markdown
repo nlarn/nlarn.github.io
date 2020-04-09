@@ -1,0 +1,53 @@
+---
+layout: post
+title:  Release 0.7.4
+date:   2020-04-09 14:17:00 +0100
+categories: release
+---
+
+More than a year has passed since the last version of NLarn, but finally, due to external circumstances (hint: mainly the global lockdown), I had the time and felt the need to finish the last remaining issue that blocked this release.
+
+The user interface received a significant amount of polish and should feel more consistent. When the player is involved in some action that takes many turns to complete, a popup window will indicate what is going on. And finally the game can configured from within the game, without editing arcane configuration files in forbidden places.
+The random number generator got replaced; the new RNG allows to save it's state within the savegame, thus ensures that the game will continue after saving and loading as if it had continued without the interruption.
+
+Due to the changed RNG, games created by previous versions are not compatible.
+
+[Download your copy from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.4/) and enjoy your expedition to the caverns on Larn!
+
+### The changes.
+* Replaced the random number generator (Mersenne Twister) with
+  the much faster xoshiro128\*\* and save it's state with the savegame
+* Redesigned poisoning: instead of taking a huge amount of hp whenever
+  poison kicks in, only take 1 hp, but increase the frequency depending
+  on poisoning
+* Stay in bank, monastery and school until explicitly leaving (with ESC)
+* Configure game defaults with CTRL-P
+* Show a popup window during actions that take more than ten turns
+* Show item type description in auto-pickup configuration dialogue
+* Permanently show spell description below spell selection window
+* Describe spell type for most spells in spell description
+* Add worn amulet to player's equipment overview
+* Allow intentionally triggering a teleport trap
+* Distribute Changelog in HTML format on macOS and Windows
+* Write a default configuration file when none is present
+* Allow specifying a custom user directory for the save and configuration
+  file on the command line
+* Added a command line option to show the Hall of Fame (highscores)
+* Add author, icon and version number to Windows uninstaller
+* Moved auto-pickup configuration key from '@' to CTRL-A
+* Auto-pickup settings are not stored with saved game anymore, but
+  set from the defaults when loading a game
+* Got rid of the unfinished Lua integration
+
+### The fixed bugs.
+* Fix movement with keypad keys while Num lock is enabled
+  (only affected Windows and macOS)
+* Fix "Cure Blindness" spell
+* Fix crash when reading large scoreboard file
+* Generate all items again (0.7.3 didn't generate first item of type)
+* Disable auto-pickup when blinded
+* Don't generate rooms with one floor tile in one direction
+* Correct the effect of the disenchantress on some item type
+* Fixed wrapping texts with indentation
+* Fix text wrapping in message popup
+* Hide the console windows on Windows
