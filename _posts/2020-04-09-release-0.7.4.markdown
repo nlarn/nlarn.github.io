@@ -7,7 +7,7 @@ categories: release
 
 More than a year has passed since the last version of NLarn, but finally, due to external circumstances (hint: mainly the global lockdown), I had the time and felt the need to finish the last remaining issue that blocked this release.
 
-The user interface received a significant amount of polish and should feel more consistent. When the player is involved in some action that takes many turns to complete, a popup window will indicate what is going on. And finally the game can configured from within the game, without editing arcane configuration files in forbidden places.
+The user interface received a significant amount of polish and should feel more consistent. When the player is involved in some action that takes many turns to complete, a popup window will indicate what is going on. And finally the game can be configured from within the game, without editing arcane configuration files in forbidden places.
 The random number generator got replaced; the new RNG allows to save it's state within the savegame, thus ensures that the game will continue after saving and loading as if it had continued without the interruption.
 
 Due to the changed RNG, games created by previous versions are not compatible.
