@@ -22,7 +22,13 @@ Due to the changed RNG, games created by previous versions are not compatible.
   on poisoning
 * Stay in bank, monastery and school until explicitly leaving (with ESC)
 * Configure game defaults with CTRL-P
+
+{% include image.html url="/images/nlarn-configuration-dialogue_2020-04-09.png" caption="Configuration dialogue" max_width="300px" %}
+
 * Show a popup window during actions that take more than ten turns
+
+{% include image.html url="/images/nlarn-long-activity_2020-04-09.png" caption="Long activity" max_width="300px" %}
+
 * Show item type description in auto-pickup configuration dialogue
 * Permanently show spell description below spell selection window
 * Describe spell type for most spells in spell description
