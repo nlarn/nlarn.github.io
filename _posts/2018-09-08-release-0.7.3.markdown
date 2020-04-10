@@ -7,7 +7,7 @@ categories: release
 
 After a seemingly endless deep slumber, which might have seemed like death, life returned to the effort to create a Larn for the 21st century.
 
-This release focused on polishing and balancing the combat system. The Windows version no longer runs in a console window, but uses a graphical console emulation and thus catches up with the macOS version, which always presented itself to the play this way. To ease the transition, the font size for the game can be modified in the configuration file.
+This release focused on polishing and balancing the combat system. The Windows version no longer runs in a console window, but uses a graphical console emulation and thus catches up with the macOS version, which always presented itself to the player this way. To ease the transition, the font size for the game can be modified in the configuration file.
 
 As usual, also some bugs got fixed. Unfortunately saved games created by previous versions are not compatible.
 
