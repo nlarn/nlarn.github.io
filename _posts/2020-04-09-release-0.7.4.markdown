@@ -12,7 +12,7 @@ The random number generator got replaced; the new RNG allows to save it's state 
 
 Due to the changed RNG, games created by previous versions are not compatible.
 
-[Download your copy from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.4/) and enjoy your expedition to the caverns on Larn!
+[Download your copy from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.4/) and enjoy your expedition to the caverns of Larn!
 
 ### The changes.
 * Replaced the random number generator (Mersenne Twister) with
