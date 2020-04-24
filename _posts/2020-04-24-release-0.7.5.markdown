@@ -5,16 +5,18 @@ date:   2020-04-24 18:49:00 +0200
 categories: release
 ---
 
-After three weeks the next release on NLarn is finished. Mainly driven by the desire to fix saving scores on Windows, which was broken in the previous version 0.7.4, this release also brings some nice improvements which were long wished for.
+After three weeks the next release on NLarn is finished. Mainly driven by the desire to fix saving highscores on Windows, which was broken in the previous version 0.7.4, this release also brings some nice improvements which were long wished for.
 
 A main menu now welcomes the player when starting the game; when a character dies, instead of disrespectfully terminating, the player returns to the main menu and can immediately start over. The interface has also been subtly improved in other aspects: important messages now stand out in bright colours and finally items on the player's position are menitoned in the game log, sparing the effort of always examining places with items.
+
+On winning the game, the difficulty level is raised and subsequent games will be more difficult then the previous games. Finally NLarn follows its paragon in this aspect. Except this automatism, everything related to increased difficulty was implemented more than a decade ago. Be prepared to pay your taxes to the Larn Revenue Service!
 
 Games created by the previous version 0.7.4 are compatible and can be continued. I'm also happy to announce that the macOS installation package, which was missing for the previos release, has returned for this release.
 
 [Download NLarn 0.7.5 from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.5/) and continue your endeavours in the caverns of Larn!
 
 ### The changes.
-* Add a menu system: instead of dropping into to the game on start,
+* Add a menu system: instead of dropping directly into the game on start,
   present a menu with the option to start a or continue the saved
   game, configure the settings and view the highscores. When the
   player dies, don't drop out of the game, but return to the menu.
