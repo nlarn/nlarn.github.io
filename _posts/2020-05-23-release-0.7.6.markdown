@@ -1,0 +1,41 @@
+---
+layout: post
+title:  Release 0.7.6
+date:   2020-05-23 08:43:00 +0200
+categories: release
+---
+
+New month, new features. This release mainly seeks to fix the macOS package, which was broken in 0.7.5.
+But also some other bugs, that only affected first time players were fixed and last but not least casting the spell "fireball" finally works in all cases and places on the maps.
+
+But also something new will sure delight the heart of any adventurer: some monsters will now appear in packs and move through the caverns together.
+
+Games created by the previous version 0.7.5 are compatible and can be continued.
+
+[Download NLarn 0.7.6 from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.6/).
+
+### The Changes:
+* Some monsters now appear in packs (e.g. osquips and rothes)
+
+{% include image.html url="/images/2020-05-23_NLarn_0.7.6_pack_of_orcs.png" caption="Pack of orcs" max_width="300px" %}
+
+* Some monsters produce sounds when attacking
+* Differentiate between amulets and talismans
+* Add some missing monster resistances
+* Shatter potions when exposed to fire
+* Consistently call the currency "gold"
+* Consistently show monastery messages as windows
+* Sort stats in obituary matching to order on main screen
+* Document that shop prices for item stacks are per item
+
+### The fixed bugs:
+* Fix macOS application bundle
+* Handle empty scoreboard correctly
+* Show undefined gender correctly in configuration dialogue
+* Several fixes to casting fireballs:
+  * now works in the topmost corridor
+  * selecting the location only allows valid selections
+  * red monsters are shown as light red when they'll be hit.
+* Bring back the Eye of Larn (after red_kangaroo)
+* Keep townsfolk inside the town area
+* Fix debit message
