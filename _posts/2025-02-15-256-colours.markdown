@@ -1,0 +1,63 @@
+---
+layout: post
+title:  Switching to 256 colours
+date:   2025-02-15 21:03:00 +0100
+categories: generic
+---
+
+Starting the game again after a long time, I've noticed that modern terminals
+no longer interpret the Curses attribute A_BOLD as bright colour. This sounds
+obscure, but as the traditional Curses interfaces only supported 8 colours,
+this was the way to go to get 16 (!) colours. Hence the display of this game
+was  broken in some terminals in their default configuration! I've noticed this
+in the new Terminal included in Fedora 41, but also the sweet COSMIC Terminal
+behaves like this.
+
+With 256 colours, we do not need to use A_BOLD to modify colours anymore and the
+first-time experience is okay again. Unfortunately PDCurses, which is essential
+for the Windows and macOS builds of the game, only supports 256 colour pairs, so
+we cannot use all possible combinations of foreground and background colours in
+the game.
+
+Gladly, only a few colours require a background, so we can use the whole lot of
+colours in the game on the black background of the game. And fortune smiled upon
+us, as 8 colours of the 256 of the enhanced palette are duplicates! These
+redundant colours are now used for the UI colours.
+
+To make the colours accessible in the game, each had to have an unique name.
+There are some lists of names to be found on the web, but unfortunately these
+all contain duplicates, leaving a lot of the colours without a name. Hence I
+had to find an distinct name for every colour.
+
+{% include image.html url="https://gist.githubusercontent.com/jasonm23/2868981/raw/0537d43a50b924558067c6fcde0117e6fab478f0/xterm-256color.svg
+" caption="XTerm 256 colours palette" max_width="300px" %}
+
+The colour names were carefully assembled from various sources, mainly by using
+Thomas Dickey's helper script
+[closest-rgb.pl](https://github.com/ThomasDickey/xterm-snapshots/blob/master/vttests/closest-rgb.pl),
+which was designed to find the closest colour names for the XTerm colour
+palette. This script was run against the
+[original X11 list of colours](https://gitlab.freedesktop.org/xorg/app/rgb/-/blob/master/rgb.txt)
+(which it was designed for), Wikipedia's list of
+[RAL colours](https://en.wikipedia.org/wiki/List_of_RAL_colours),
+[Crayola crayon colors](https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)
+and [generic colour names (A-F)](https://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F)
+[(G-M)](https://en.wikipedia.org/wiki/List_of_colors:_G%E2%80%93M)
+[(N-Z)](https://en.wikipedia.org/wiki/List_of_colors:_N%E2%80%93Z),
+and the list of [traditional Japanese colour names](https://en.wikipedia.org/wiki/Traditional_colors_of_Japan)
+(actually I found a [JavaScript representation of the data](https://gist.github.com/jpegzilla/2ab93a895b0e484fa042b7bde29a093c),
+which was much easier to work with).
+
+The script not only shows the closest match for a value, but also the
+distance of the colour to the named colour. Usually I've picked the
+colour name with the best match, but there were still quite a few duplicates
+and bad matches. Those I've fed into the
+[ArtyClick Color Name Finder](https://colors.artyclick.com/color-name-finder/),
+which knew a nice name for most of the remaining colours.
+
+I'm quite happy with the [resulting names](https://github.com/nlarn/nlarn/blob/master/inc/colours.h#L28).
+
+I have assigned new colours to most items and monsters. For the latter
+I've tried to assign a colour that matches the well-known D&D style of
+the monsters. Stay tuned for the next release, which will include these
+changes - soon (TM).
