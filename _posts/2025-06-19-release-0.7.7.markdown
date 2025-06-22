@@ -16,7 +16,7 @@ colours!
 {% include image.html url="/images/2025-06-19_NLarn_0.7.7_256-colours.png" caption="256 colours" max_width="300px" %}
 
 Games created by the previous version 0.7.6 are not compatible. Hopefully
-future additions wil not break save files anymore!
+future additions will not break save files anymore!
 
 [Download NLarn 0.7.7 from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.7/).
 
@@ -33,7 +33,7 @@ future additions wil not break save files anymore!
 * Show carried gold in yellow (suggested by jv84)
 * The potion of see invisible now cures blindness (suggested by jv84)
 * Modified potions of instant healing: they now always cure poisoning
-  and sickness. The previous special behavior of blessed potions of
+  and sickness. The previous special behaviour of blessed potions of
   instant healing got removed.
 * Healing spell and healing potion no longer cure sickness
 * Show attended courses in school
