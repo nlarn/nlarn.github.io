@@ -10,7 +10,7 @@ After another hiatus finally some news! Fresh and colourful comes NLarn 0.7.7.
 In the last five years, most terminal emulators do no longer interpret bold
 as bright anymore, as 256 colours are supported everywhere and people seemingly
 decided that backwards compatibility to the eighties is not required anymore.
-In the result, the game looked quite broken and had to be fixes. With more
+In the result, the game looked quite broken and had to be fixed. With more
 colours!
 
 {% include image.html url="/images/2025-06-19_NLarn_0.7.7_256-colours.png" caption="256 colours" max_width="300px" %}
