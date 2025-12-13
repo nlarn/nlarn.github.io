@@ -1,0 +1,27 @@
+---
+layout: post
+title:  Release 0.7.8
+date:   2025-12-13 11:15:00 +0100
+categories: release
+---
+It's the time again! A new version of NLarn has seen the light of the day!
+
+The development of the last six months brought some improvements to the optical appearance of the game. On one hand, the colour scheme of the UI can be changed, besides the traditional colours there are five new and appealing colour schemes to pick from.
+
+{% include image.html url="/images/2025-12-13-NLarn_0.7.8_configuration_dialogue_in_sourlick_colours.png" caption="The new colour theme \"sourlick\"" max_width="300px" %}
+
+
+On the other hand, the game's setting always called for some blood and gore! Now the player's character turns red when injured and blood spilled by critters and the player causes stains on the dungeon floor and walls.
+
+{% include image.html url="/images/2025-12-13-NLarn_0.7.8_blood_and_gore.png" caption="Grave injuries and a lot of spilled blood" max_width="300px" %}
+
+On the tactical front, world and combat interactions were enriched: gelatinous cubes now enguld and corrode items, rust monsters eat iron items they find on the floor, and colliding spheres of annihilation inflict real blast damage when they explode.
+
+To reduce the differences to the original Larn, some monster resistances were added and key binding modified.
+
+A healthy round of bugfixes underpins all of this, addressing crashes from traps and font scaling, correcting color and stealth behavior, fixing broken Spirit Naga attacks, rebalancing demon lord difficulty, and restoring proper post-victory challenge scaling.
+
+Games started with the previous version 0.7.7 can be continued with this version.
+
+[Download NLarn 0.7.8 from Sourceforge](http://sourceforge.net/projects/nlarn/files/nlarn/0.7.8/).
+
