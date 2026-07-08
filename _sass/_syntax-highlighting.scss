@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .highlight {
     background: #fff;
     @extend %vertical-rhythm;

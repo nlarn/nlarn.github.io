@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .site-header {
     border-bottom: 1px solid $line-color;
     position: relative;

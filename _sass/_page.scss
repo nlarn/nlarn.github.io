@@ -1,23 +1,16 @@
+@use "variables" as *;
+
 .page {
     margin: 0 auto;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc($content-width - ($spacing-unit * 2));
     min-width: -webkit-calc(#{$content-min-width} - (#{$spacing-unit} * 2));
-    min-width:         calc(#{$content-min-width} - (#{$spacing-unit} * 2));
+    min-width:         calc($content-min-width - ($spacing-unit * 2));
     @include media-query($desktop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc($content-width - ($spacing-unit));
         min-width: -webkit-calc(#{$content-min-width} - (#{$spacing-unit} * 2));
-        min-width:         calc(#{$content-min-width} - (#{$spacing-unit} * 2));
-    }
-}
-
-// Clearfix
-%clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
+        min-width:         calc($content-min-width - ($spacing-unit * 2));
     }
 }
 
