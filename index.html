@@ -22,7 +22,7 @@ layout: page
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
         </h2>
-        {{ post.excerpt }}
+        {{ post.excerpt }}{% if post.content contains "<!-- more -->" %}<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">more..</a>{% endif %}
       </li>
     {% endfor %}
   </ul>

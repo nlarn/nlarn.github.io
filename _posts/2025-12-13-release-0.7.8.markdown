@@ -17,6 +17,8 @@ On the other hand, the game's setting always called for some blood and gore! Now
 
 On the tactical front, world and combat interactions were enriched: gelatinous cubes now enguld and corrode items, rust monsters eat iron items they find on the floor, and colliding spheres of annihilation inflict real blast damage when they explode.
 
+<!-- more -->
+
 To reduce the differences to the original Larn, some monster resistances were added and key binding modified.
 
 A healthy round of bugfixes underpins all of this, addressing crashes from traps and font scaling, correcting color and stealth behavior, fixing broken Spirit Naga attacks, rebalancing demon lord difficulty, and restoring proper post-victory challenge scaling.
