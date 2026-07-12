@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 .page {
     margin: 0 auto;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));

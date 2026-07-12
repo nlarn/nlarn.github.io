@@ -2,15 +2,16 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@use "sass:color";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-// @use rules must be written before any other rules
-@use "variables";
-@use "sass:color";
-@use "header";
-@use "mobile-header";
-@use "base";
-@use "footer";
-@use "page";
-@use "syntax-highlighting";
-@use "fancy-image";
+@import
+    "variables",
+    "header",
+    "mobile-header",
+    "base",
+    "footer",
+    "page",
+    "syntax-highlighting",
+    "fancy-image"
+;
