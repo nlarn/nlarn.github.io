@@ -1,5 +1,3 @@
-@use "sass:color";
-
 // Variables
 $base-font-family: 'Courier New', 'Courier', monospace;
 $base-font-size:   medium;
@@ -18,7 +16,7 @@ $orange:     #ca6c18;
 $red:        #b6321c;
 
 $background:        $grey-vlight;
-$dark-background:   color.adjust($background, $lightness: -5%);
+$dark-background:   darken($background, 5%);
 $text-color:        $grey-vdark;
 $text-light-color:  $grey;
 $url-color:         $red;
