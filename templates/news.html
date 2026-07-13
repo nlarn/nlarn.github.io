@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul class="listing">
+{% set year = "" %}
+{% for post in section.pages | sort(attribute="date") | reverse %}
+  {% if post.date %}
+  {% set y = post.date | date(format="%Y") %}
+  {% if year != y %}
+    {% set year = y %}
+    <li class="listing-seperator">{{ year }}</li>
+  {% endif %}
+  <li class="listing-item">
+    <time datetime="{{ post.date | date(format="%Y-%m-%d") }}">{{ post.date | date(format="%Y-%m-%d") }}</time>
+    <a href="{{ post.permalink | safe }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}

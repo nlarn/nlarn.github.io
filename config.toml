@@ -1,0 +1,25 @@
+title = "nlarn"
+description = "News about NLarn, a roguelike game"
+base_url = "https://nlarn.github.io"
+output_dir = "_site"
+
+[markdown]
+
+[extra]
+# These will be available as site.extra.* in templates
+author = "Joachim de Groot"
+sourcecode = "https://github.com/nlarn/nlarn.github.io"
+
+# Navigation menu
+[extra.menu]
+items = [
+    { title = "About", href = "/about/" },
+    { title = "News", href = "/news/" },
+    { title = "Screenshots", href = "/screenshots/" },
+    { title = "Spoilers", href = "/spoilers/" }
+]
+
+# For RSS feed
+[extra.feed]
+filename = "feed.xml"
+limit = 20

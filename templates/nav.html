@@ -1,0 +1,5 @@
+<ul class="menu">
+    {% for item in config.extra.menu.items %}
+    <li><a href="{{ item.href | safe }}" class="page-link">{{ item.title }}</a></li>
+    {% endfor %}
+</ul>

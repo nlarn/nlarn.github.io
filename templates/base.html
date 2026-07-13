@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block head %}
+  {% include "head.html" %}
+  {% endblock %}
+</head>
+
+<body>
+  <div class="page">
+    {% block header %}
+    {% include "header.html" %}
+    {% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    {% include "footer.html" %}
+    {% endblock %}
+
+    {% block analytics %}
+    {% include "analytics.html" %}
+    {% endblock %}
+  </div>
+</body>
+
+</html>

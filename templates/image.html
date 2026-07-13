@@ -1,0 +1,7 @@
+{% if url %}
+<div class="captioned-img align">
+    <a href="{{ url | safe }}">
+    <img src="{{ url | safe }}" {% if width %}width="{{ width }}"{% elif height %}height="{{ height }}"{% endif %} />
+    </a>{% if caption %}{{ caption }}{% endif %}
+</div>
+{% endif %}

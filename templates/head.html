@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ config.title }}{% if page.title %} :: {{ page.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | trim }}{% else %}{{ config.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | safe }}">
+    <link rel="stylesheet" href="{{ '/css/gh-fork-ribbon.css' | safe }}">
+    <link rel="canonical" href="{% if page.permalink %}{{ page.permalink | safe }}{% else %}{{ config.base_url | safe }}{% endif %}">
+    <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ '/feed.xml' | safe }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | safe }}">

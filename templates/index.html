@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home">
+
+  <h1 class="page-heading">nlarn</h1>
+
+  A rewrite of Noah Morgan's classic roguelike game Larn from 1986.
+  NLarn tries to maintain the atmosphere and story of the original game while
+  improving the gameplay by using state-of-the-art roguelike technology and
+  a simplified user interface.
+  <a href="{{ "/about" | safe }}">more..</a>
+
+  <h2 class="page-heading">Recent News</h2>
+
+  {% set post1 = get_page(path="news/2026-06-27-release-0.7.9.md") %}
+  {% set post2 = get_page(path="news/2025-12-13-release-0.7.8.md") %}
+  
+  {% if post1 %}
+  <article class="post-preview">
+    <header class="post-header">
+      <h2><a class="post-link" href="{{ post1.permalink | safe }}">{{ post1.title }}</a></h2>
+      <p class="post-meta">
+        Posted on {{ post1.date | date(format="%B %-d, %Y") }}
+      </p>
+    </header>
+    
+    <div class="post-content">
+      {{ post1.content | safe }}
+    </div>
+  </article>
+  {% endif %}
+  
+  {% if post2 %}
+  <article class="post-preview">
+    <header class="post-header">
+      <h2><a class="post-link" href="{{ post2.permalink | safe }}">{{ post2.title }}</a></h2>
+      <p class="post-meta">
+        Posted on {{ post2.date | date(format="%B %-d, %Y") }}
+      </p>
+    </header>
+    
+    <div class="post-content">
+      {{ post2.content | safe }}
+    </div>
+  </article>
+  {% endif %}
+
+  <p><a href="{{ "/news/" | safe }}">News Archive</a></p>
+
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | safe }}">via RSS</a></p>
+
+</div>
+{% endblock %}

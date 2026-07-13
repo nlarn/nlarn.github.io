@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set urls = [
+    "/images/2020-04-12_NLarn_0.7.4-g3e6706e_cloak_of_invisibility.png",
+    "/images/2020-04-12_NLarn_0.7.4-g1d4f341_obituary.png",
+    "/images/2020-04-12_NLarn_0.7.4-g3e6706e_picking_read.png",
+    "/images/2020-04-12_NLarn_0.7.4-g3e6706e_trading_gems.png",
+    "/images/2020-04-12_NLarn_0.7.4-g3e6706e_treasure_room.png"
+] %}
+{% set captions = [
+    "Found a cloak of invisibility",
+    "The obituary",
+    "Picking something to read",
+    "Trading gems at the Bank of Larn",
+    "Looting a treasure room"
+] %}
+{% for url in urls %}
+{% set i = loop.index0 %}
+<div class="captioned-img align">
+    <a href="{{ url | safe }}">
+    <img src="{{ url | safe }}" />
+    </a>{{ captions[i] }}
+</div>
+{% endfor %}
+{% endblock %}
