@@ -23,7 +23,7 @@ The game world is filled with monsters to battle, items to collect, spells to ca
 
 Your character possesses several attributes that shape your effectiveness in the game. Strength determines your melee damage and how much weight you can carry. Dexterity affects your accuracy with weapons, your ability to evade attacks, and various skill checks. Constitution influences your maximum hit points and resistance to certain effects. Intelligence governs your ability to learn and cast spells, while Wisdom affects various checks and some spell effects.
 
-At character creation, you can choose from different stat packages that emphasize particular attributes, or accept a random distribution. As you progress, your hit points and mana are displayed prominently on screen, with visual warnings appearing when they run low. Experience is gained by defeating monsters, and leveling up increases your maximum hit points.
+At character creation, you can choose from different stat packages that emphasize particular attributes, or accept a random distribution. As you progress, your hit points and mana are displayed prominently on screen, with visual warnings appearing when they run low. Experience is gained by defeating monsters, and leveling up increases your maximum hit points, magic power and combat proficiency.
 
 
 ## Combat and Weapons
@@ -52,13 +52,14 @@ Different armour types provide varying levels of protection. The weight of armou
 
 ## Magic System
 
-Magic in NLarn is learned from books found in the dungeon or purchased from shops. Each spell has an intelligence requirement that must be met before it can be learned. Reading a book takes time and may grant knowledge of its spell. Casting spells consumes mana, with higher level spells requiring more. Spell casting can fail based on your intelligence and the spell's level, and some spells can be cast repeatedly on the same target for extended effects.
+Magic in NLarn is learned from books found in the dungeon or purchased from the DND store. Each spell has an intelligence requirement that must be met before it can be learned. Reading a book takes time and may grant knowledge of its spell. Casting spells consumes mana, with higher level spells requiring more. Spell casting can fail based on your intelligence and the spell's level, and some spells can be cast repeatedly on the same target for extended effects.
 
 ### Spell Types
 
 Spells in NLarn are organized into several categories:
 
 **Player Spells** affect only the caster:
+
 - Protection creates a protective field
 - Dexterity and Strength temporarily increase their respective attributes
 - Healing restores hit points
@@ -70,7 +71,9 @@ Spells in NLarn are organized into several categories:
 - Walk Through Walls allows passing through walls
 - Alter Reality randomly reshapes the current level
 
+
 **Point Spells** target a single monster:
+
 - Magic Missile fires a magical projectile
 - Sleep puts monsters to sleep
 - Charm Monster attempts to charm a monster to your side
@@ -83,22 +86,29 @@ Spells in NLarn are organized into several categories:
 - Polymorph transforms a monster
 - Teleport Away sends a monster to a random location
 
+
 **Ray Spells** fire in a straight line:
+
 - Magic Missile
 - Sonic Spear
 - Cone of Cold creates a blast of cold and explodes when hitting obstacles
 - Lightning
 
 **Blast Spells** create explosions:
+
 - Fireball creates an explosion of fire and travels as a ray, exploding when it hits something
 - Cone of Cold
 
+
 **Flood Spells** fill areas with effects:
+
 - Killing Cloud fills an area with poisonous gas
 - Flood creates a wall of water
 - Magic Fire creates a curtain of fire around you
 
+
 **Other Spells** have various special effects:
+
 - Create Monster summons a monster near you
 - Phantasmal Forces creates illusions that may scare monsters
 - Vaporize Rock turns rock into air
@@ -108,7 +118,7 @@ Spells in NLarn are organized into several categories:
 - Scare Monsters terrifies nearby monsters
 - Cancellation protects against spheres of annihilation
 
-Some spells have been balanced to provide appropriate challenge and usefulness, and some integrate with the godly goodwill system.
+Some spells reqire a good relation with the gods.
 
 
 ## Items and Equipment
@@ -126,11 +136,11 @@ Containers can store multiple items and may be trapped with various effects. Ite
 
 ## Town and Buildings
 
-The town level serves as a safe area where you can prepare before descending into the dungeon. It contains various shops and services to aid your adventure. Townsfolk provide information, though they may also pick up weapons to fight monsters that enter town, and will even attack monsters that threaten the town.
+The town level serves as a safe area where you can prepare before descending into the dungeon. It contains various shops and services to aid your adventure. Townsfolk provide information, and they may even pick up weapons to fight monsters that enter town.
 
-The Bank allows you to store gold and earn interest, with a branch office also available in the dungeon. The DND Store sells equipment, while the Larn Trading Post allows you to buy and sell items. The School of Larn offers courses to improve your attributes. The Monastery provides healing and other services. Your Home serves as a starting point with storage space for items you wish to keep.
+The Bank allows you to store gold and earn interest, with a branch office also available in the dungeon. The DND Store sells equipment, while the Larn Trading Post allows you to sell items. The School of Larn offers courses to improve your attributes. The Monastery provides healing and other services. Your Home serves as a starting point with storage space for items you wish to keep (yes, the stash).
 
-Altars allow you to pray and gain divine favor. Making donations at altars increases your godly goodwill, which affects certain spells. Higher donations increase the chance of positive outcomes, while desecrating altars will anger your god and decrease your standing. Your godly goodwill is tracked and persists throughout your game.
+Altars allow you to pray and gain divine favor. Making donations at altars increases your relation with the gods, which affects certain spells. Higher donations increase the chance of positive outcomes, while desecrating altars will anger your god and decrease your standing. Your godly goodwill is tracked and persists throughout your game.
 
 Fountains can be drunk from for various effects, both positive and negative, or washed at to cleanse certain effects. They may dry up after use. Thrones can be sat upon for various effects, or pillaged for gems, though disturbing them may generate dangerous monsters.
 
@@ -171,22 +181,20 @@ Charmed creatures, summoned demons, and even townsfolk can fight on your side â€
 
 Traps come in various types throughout the dungeon. Trap doors cause you to fall through to the level below. Arrow and dart traps fire projectiles at you. Pit traps ensnare you. Sleep gas traps can put you to sleep, while poison traps inflict poisoning. Teleport traps send you to a random location, and mana drain traps reduce your magical energy.
 
-Traps can be triggered by stepping on them, but can also be found in containers. You can disarm traps using the dedicated command. Your dexterity affects your chance to evade traps, and being burdened increases the chance of triggering them.
-
-The dungeon contains several environmental hazards. Water and lava can be harmful to step into. Deep water and lava will destroy most items that fall into them. Fire can burn and destroy items, acid can corrode them, and rust can damage iron items over time.
+Traps can be triggered by stepping on them, but can also be found on containers. You can attempt to disarm traps using the dedicated command, but when you fail, you'll trigger it!. Your dexterity affects your chance to evade traps, and being burdened increases the chance of triggering them. Dexterity also affects your chance to disarm a trap, so you better simply ignore trapped containers with insufficient dexterity.
 
 
 ## Game Mechanics
 
-Movement and exploration are fundamental to NLarn. You can move with the arrow keys or vi-style keys. Running is possible with a direction plus a modifier key, or through a dedicated run command. The auto-travel feature allows you to select a target and move toward it automatically, continuing even if interrupted by monsters. You can search for traps, rest to recover hit points, or use a long rest command that ignores some monsters like floating eyes and umber hulks.
+Movement and exploration are fundamental to NLarn. You can move with the arrow keys or vi-style keys, add running is possible with a direction plus shift. The auto-travel feature allows you to select a target and move toward it automatically, aborted only if interrupted by monsters. You can search for traps, rest to recover hit points.
 
-Inventory management is handled through the inventory screen, accessed with a dedicated key. Items can be equipped, used, or dropped as needed. Auto-pickup can be configured to automatically collect certain item types. The inventory display is organized with categorical headers, and you can jump directly to the first item of any type by pressing its glyph. When shopping or managing items, you can pick up all items from the ground, get all items from a container, or retrieve all items from your stash at home.
+Inventory management is handled through the inventory screen, accessed with a dedicated key. Items can be equipped, used, or dropped as needed. Auto-pickup can be configured to automatically collect certain item types. The inventory display is organized with categorical headers, and you can jump directly to the first item of any type by pressing its glyph.
 
 Combat actions include attacking with weapons, casting spells, throwing items, firing ranged weapons, and swapping between your primary and secondary weapons. Magic is handled through a spell selection dialog where spells are organized by level and type. Some spells require you to target them at specific monsters or locations.
 
 Character progression comes through gaining experience from defeating monsters. Leveling up increases your maximum hit points, allowing you to survive deeper in the dungeon. You can also improve your attributes by taking courses at the School of Larn.
 
-Saving works both automatically and manually. The game saves your progress when you quit or if it crashes, and you can also manually save at any time. Save files are locked to prevent accidentally launching multiple instances of the game with the same character.
+Saving works both automatically. The game saves your progress when you quit; optionally when you change levels to allow recovering from crashes (even they are not very frequent these days).
 
 
 ## Divine System
